@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update File</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Update File - {{ filename }}</h1>
+
+    <form method="POST">
+        <label>New Filename:</label>
+        <input type="text" name="new_name" required>
+        <button type="submit">Rename</button>
+    </form>
+
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
